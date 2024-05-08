@@ -1,86 +1,55 @@
-# UI5 Application com.spreadsheetimporter.abapdeploy
+# UI5 Application com.spreadsheetimporter.centraltest
 
-Insert the purpose of this project and some interesting info here...
+This UI5 Application enables a packaged deployment of the UI5 Spreadsheet Importer to use as central deployed component.
 
 ## Description
 
-This app demonstrates a setup for developing UI5 applications.
+
 
 ## Requirements
 
 Either [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) for dependency management.
 
+You can use this concept in multiple ways:
+
+- create your own app and use the same concept as here
+- clone/fork the repo and change according to your needs
+- use the app as is and only change config
+
 ## Preparation
 
-Use `npm` (or `yarn`) to install the dependencies:
+Use `npm` to install the dependencies:
 
 ```sh
 npm install
 ```
 
-(To use yarn, just do `yarn` instead.)
+## Deploy the app
 
-## Run the App
+1. change .env file to your needs
 
-Execute the following command to run the app locally for development in watch mode (the browser reloads the app automatically when there are changes in the source code):
+Copy the `.envTEMPLATE` and rename it to `.env`. Add your credentials to the file.
 
-```sh
-npm start
-```
+2. Change the ui5-deploy.yaml file to your needs
 
-As shown in the terminal after executing this command, the app is then running on http://localhost:8080/index.html. A browser window with this URL should automatically open.
+Copy `ui5-deployTEMPLATE.yaml` file and rename to `ui5-deploy.yaml` and change the following values to your needs:
 
-(When using yarn, do `yarn start` instead.)
+- target url
+- target client
+- app name
+- app description
+- app package
+- app transport
 
-## Build the App
+3. Deploy the app
 
-### Unoptimized (but quick)
-
-Execute the following command to build the project and get an app that can be deployed:
-
-```sh
-npm run build
-```
-
-The result is placed into the `dist` folder. To start the generated package, just run
+Execute the following command to build and deploy the app:
 
 ```sh
-npm run start:dist
+npm run deploy
 ```
 
-Note that `index.html` still loads the UI5 framework from the relative URL `resources/...`, which does not physically exist, but is only provided dynamically by the UI5 tooling. So for an actual deployment you should change this URL to either [the CDN](https://sdk.openui5.org/#/topic/2d3eb2f322ea4a82983c1c62a33ec4ae) or your local deployment of UI5.
 
-(When using yarn, do `yarn build` and `yarn start:dist` instead.)
-
-### Optimized
-
-For an optimized self-contained build (takes longer because the UI5 resources are built, too), do:
-
-```sh
-npm run build:opt
-```
-
-To start the generated package, again just run:
-
-```sh
-npm run start:dist
-```
-
-In this case, all UI5 framework resources are also available within the `dist` folder, so the folder can be deployed as-is to any static web server, without changing the bootstrap URL.
-
-With the self-contained build, the bootstrap URL in `index.html` has already been modified to load the newly created `sap-ui-custom.js` for bootstrapping, which contains all app resources as well as all needed UI5 JavaScript resources. Most UI5 resources inside the `dist` folder are for this reason actually **not** needed to run the app. Only the non-JS-files, like translation texts and CSS files, are used and must also be deployed. (Only when for some reason JS files are missing from the optimized self-contained bundle, they are also loaded separately.)
-
-(When using yarn, do `yarn build:opt` and `yarn start:dist` instead.)
-
-## Check the Code
-
-To lint the code, do:
-
-```sh
-npm run lint
-```
-
-(Again, when using yarn, do `yarn lint` instead.)
 
 ## License
 
