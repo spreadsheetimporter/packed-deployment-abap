@@ -1,0 +1,44 @@
+name: Update Versions of SpreadsheetImporter
+
+on:
+  # This triggers the workflow manually from GitHub Actions tab; you can adjust it as needed.
+  workflow_dispatch:
+
+jobs:
+  update-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Ensures history is available for commits
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'  # Use the latest LTS version of Node.js
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Wait before execution
+        run: sleep 300  # Wait for 5 minutes
+
+      - name: Run script to add new version
+        run: node addNewVersion.js
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Commit changes
+        run: |
+            git config --global user.name 'marianfoo'
+            git config --global user.email '13335743+marianfoo@users.noreply.github.com'
+            git add -A
+            # Check if there are any changes; only commit and push if there are.
+            if git diff --staged --quiet; then
+            echo "No changes to commit."
+            else
+            git commit -m "chore: update versions"
+            git push
+            fi
