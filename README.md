@@ -49,6 +49,37 @@ Execute the following command to build and deploy the app:
 npm run deploy
 ```
 
+## Update local deployed apps
+
+**It is recommended to start with this sample app to deploy the Spreadsheet Importer to your local server.**
+
+### Using this app
+
+When you executed the above steps, you can create a new app in your own git server.  
+Commit your changes (like the new deploy yaml) and then push to your git server.  
+If a new version of this app is available, you can update your local deployed app.
+
+You then have to git remotes like `origin` and `local`.  
+When you want to update your local deployed app, you can execute the following command:
+
+```sh
+git pull origin main # pull the latest changes from the repo
+npm install # install the latest dependencies including the newest versions of spreadsheetimporter
+npm run deploy # deploy the app to your local server
+git push local main # push the changes to your local git server
+```
+
+### Only using this as basis
+
+Alternatively you can use the `node addNewVersion.js` command to only update the relevant lines in the `package.json` and `manifest.json` files.
+
+````sh
+node addNewVersion.js
+git commit -am "update version"
+git push local main
+````
+
+
 
 
 ## License
