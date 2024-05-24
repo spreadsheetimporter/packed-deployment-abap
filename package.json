@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "ui5-cc-spreadsheetimporter-0-34-0": "npm:ui5-cc-spreadsheetimporter@0.34.0",
-    "ui5-cc-spreadsheetimporter-0-34-1": "npm:ui5-cc-spreadsheetimporter@0.34.1"
+    "ui5-cc-spreadsheetimporter-0-34-1": "npm:ui5-cc-spreadsheetimporter@0.34.1",
+    "ui5-cc-spreadsheetimporter-1-0-0": "npm:ui5-cc-spreadsheetimporter@1.0.0"
   }
 }

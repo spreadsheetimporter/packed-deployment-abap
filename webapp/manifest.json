@@ -11,7 +11,8 @@
     },
     "embeds": [
       "thirdparty/customControl/spreadsheetImporter/v0_34_0",
-      "thirdparty/customControl/spreadsheetImporter/v0_34_1"
+      "thirdparty/customControl/spreadsheetImporter/v0_34_1",
+      "thirdparty/customControl/spreadsheetImporter/v1_0_0"
     ]
   },
   "sap.ui": {
@@ -38,7 +39,8 @@
       },
       "components": {
         "cc.spreadsheetimporter.v0_34_0": {},
-        "cc.spreadsheetimporter.v0_34_1": {}
+        "cc.spreadsheetimporter.v0_34_1": {},
+        "cc.spreadsheetimporter.v1_0_0": {}
       }
     },
     "handleValidation": true,
