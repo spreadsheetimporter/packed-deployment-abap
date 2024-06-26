@@ -10,11 +10,11 @@
       "version": "${version}"
     },
     "embeds": [
-      "thirdparty/customControl/spreadsheetImporter/v0_34_0",
-      "thirdparty/customControl/spreadsheetImporter/v0_34_1",
-      "thirdparty/customControl/spreadsheetImporter/v1_0_0",
-      "thirdparty/customControl/spreadsheetImporter/v1_1_0",
-      "thirdparty/customControl/spreadsheetImporter/v1_1_1"
+      "thirdparty/customcontrol/spreadsheetimporter/v0_34_0",
+      "thirdparty/customcontrol/spreadsheetimporter/v0_34_1",
+      "thirdparty/customcontrol/spreadsheetimporter/v1_0_0",
+      "thirdparty/customcontrol/spreadsheetimporter/v1_1_0",
+      "thirdparty/customcontrol/spreadsheetimporter/v1_1_1"
     ]
   },
   "sap.ui": {

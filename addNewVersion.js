@@ -63,7 +63,7 @@ async function main() {
 
     for (const version of validVersions) {
       const versionKey = version.replaceAll('.', '_');
-      manifestJsonData["sap.app"].embeds.push(`thirdparty/customControl/spreadsheetImporter/v${versionKey}`);
+      manifestJsonData["sap.app"].embeds.push(`thirdparty/customcontrol/spreadsheetimporter/v${versionKey}`);
       manifestJsonData["sap.ui5"].dependencies.components[`cc.spreadsheetimporter.v${versionKey}`] = {};
     }
     fs.writeFileSync(manifestFile, JSON.stringify(manifestJsonData, null, 2)); 
