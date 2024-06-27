@@ -9,6 +9,20 @@
     "applicationVersion": {
       "version": "${version}"
     },
+    "crossNavigation": {
+      "inbounds": {
+        "SpreadsheetImporter-display": {
+          "semanticobject": "SpreadsheetImporter",
+          "action": "display",
+          "title": "{{flpTitle}}",
+          "subTitle": "{{flpSubtitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    },
     "embeds": [
       "thirdparty/customcontrol/spreadsheetimporter/v0_34_0",
       "thirdparty/customcontrol/spreadsheetimporter/v0_34_1",
