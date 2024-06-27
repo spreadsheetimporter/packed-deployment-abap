@@ -9,6 +9,20 @@
     "applicationVersion": {
       "version": "${version}"
     },
+    "crossNavigation": {
+      "inbounds": {
+        "Spreadsheet-upload": {
+          "semanticobject": "Spreadsheet",
+          "action": "upload",
+          "title": "Spreadsheet Upload",
+          "subTitle": "Test",
+          "signature": {
+            "paraneters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    },
     "embeds": [
       "thirdparty/customcontrol/spreadsheetimporter/v0_34_0",
       "thirdparty/customcontrol/spreadsheetimporter/v0_34_1",
