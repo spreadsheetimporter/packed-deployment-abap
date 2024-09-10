@@ -22,7 +22,7 @@
     "wdi5": "wdio run ./webapp/test/e2e/wdio.conf.js"
   },
   "devDependencies": {
-    "@sap/ux-ui5-tooling": "^1.14.4",
+    "@sap/ux-ui5-tooling": "^1.14.5",
     "@ui5/cli": "^4.0.6"
   },
   "dependencies": {
