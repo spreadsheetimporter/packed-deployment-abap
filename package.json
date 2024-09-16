@@ -22,8 +22,8 @@
     "wdi5": "wdio run ./webapp/test/e2e/wdio.conf.js"
   },
   "devDependencies": {
-    "@sap/ux-ui5-tooling": "^1.14.5",
-    "@ui5/cli": "^4.0.6"
+    "@sap/ux-ui5-tooling": "^1.15.0",
+    "@ui5/cli": "^4.0.8"
   },
   "dependencies": {
     "ui5-cc-spreadsheetimporter-0-34-0": "npm:ui5-cc-spreadsheetimporter@0.34.0",
