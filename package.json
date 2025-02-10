@@ -44,6 +44,7 @@
     "ui5-cc-spreadsheetimporter-1-5-2": "npm:ui5-cc-spreadsheetimporter@1.5.2",
     "ui5-cc-spreadsheetimporter-1-6-0": "npm:ui5-cc-spreadsheetimporter@1.6.0",
     "ui5-cc-spreadsheetimporter-1-7-0": "npm:ui5-cc-spreadsheetimporter@1.7.0",
-    "ui5-cc-spreadsheetimporter-1-7-1": "npm:ui5-cc-spreadsheetimporter@1.7.1"
+    "ui5-cc-spreadsheetimporter-1-7-1": "npm:ui5-cc-spreadsheetimporter@1.7.1",
+    "ui5-cc-spreadsheetimporter-1-7-2": "npm:ui5-cc-spreadsheetimporter@1.7.2"
   }
 }
