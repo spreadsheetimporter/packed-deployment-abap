@@ -45,7 +45,8 @@
       "thirdparty/customcontrol/spreadsheetimporter/v1_7_1",
       "thirdparty/customcontrol/spreadsheetimporter/v1_7_2",
       "thirdparty/customcontrol/spreadsheetimporter/v1_7_3",
-      "thirdparty/customcontrol/spreadsheetimporter/v2_0_0"
+      "thirdparty/customcontrol/spreadsheetimporter/v2_0_0",
+      "thirdparty/customcontrol/spreadsheetimporter/v2_1_0"
     ]
   },
   "sap.ui": {
@@ -92,7 +93,8 @@
         "cc.spreadsheetimporter.v1_7_1": {},
         "cc.spreadsheetimporter.v1_7_2": {},
         "cc.spreadsheetimporter.v1_7_3": {},
-        "cc.spreadsheetimporter.v2_0_0": {}
+        "cc.spreadsheetimporter.v2_0_0": {},
+        "cc.spreadsheetimporter.v2_1_0": {}
       }
     },
     "handleValidation": true,
