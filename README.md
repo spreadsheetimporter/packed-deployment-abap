@@ -84,4 +84,13 @@ git push local main
 
 ## License
 
-This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+The deployment application uses the [Apache License 2.0](LICENSE). Each embedded UI5 Spreadsheet Importer retains its release license.
+
+- 0.34.x and 1.x — Apache 2.0
+- 2.0.0 and 2.1.0 — [commercial license](webapp/licenses/SpreadsheetImporter-2.0.0-and-2.1.0.txt)
+- 2.2.0 — [commercial license](webapp/licenses/SpreadsheetImporter-2.2.0.txt)
+- 2.3.0 — [commercial license](webapp/licenses/SpreadsheetImporter-2.3.0.txt)
+- 2.4.0 — [commercial license](webapp/licenses/SpreadsheetImporter-2.4.0.txt)
+- 2.5.0 — Apache 2.0, including for production use. The component includes its own `LICENSE` and `THIRD-PARTY-NOTICES.txt` in its versioned directory.
+
+The files in `webapp/licenses/` reproduce the commercial terms from the corresponding UI5 release tags for offline reference.
