@@ -71,6 +71,7 @@ async function main() {
     console.log('Files updated successfully!');
   } catch (error) {
     console.error('Error:', error);
+    process.exitCode = 1;
   }
 }
 
